@@ -1,0 +1,5 @@
+
+# Directorio para CSVs en instancia local para no colocar demasiados datos en el repositorio remoto
+csv/
+
+
