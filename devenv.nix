@@ -6,6 +6,8 @@
     
   };
 
+  devcontainer.enable = true;
+  
   # https://devenv.sh/packages/
   packages = [ 
     pkgs.conda  # Para poder usar el gestor de paquetes de Conda en Nix
