@@ -50,6 +50,25 @@
       '';
       description = "Prepara el entorno conda sparkenv con todas las librerías necesarias";
     };
+    
+    install-jupyter = {
+      exec = ''
+        echo 'Iniciando instalación de Jupyter Lab...'
+        conda-shell -c "
+          conda install -n sparkenv -c anaconda jupyterlab -y
+        "
+      '';
+      description = "Instala JupyterLab";
+    };
+  };
+  
+  processes = {
+    "jupyter-lab".exec = ''
+      conda-shell -c "
+        conda activate sparkenv
+        jupyter lab
+      "
+    '';
   };
   
   # https://devenv.sh/tests/
