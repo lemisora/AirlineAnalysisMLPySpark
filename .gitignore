@@ -14,3 +14,14 @@ devenv.local.yaml
 
 # pre-commit
 .pre-commit-config.yaml
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+__pycache__/
+.virtual_documents/
+
+# Entornos virtuales
+.venv
+venv
+env
+.env
